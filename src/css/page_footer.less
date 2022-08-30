@@ -1,0 +1,127 @@
+.footer {
+  height: 172px;
+  box-sizing: border-box;
+  border-top: 1px solid #d3d3d3;
+  background-color: #f2f2f2;
+}
+
+.footer .area {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+
+  .area-left {
+    width: 520px;
+    padding-top: 15px;
+    line-height: 24px;
+    color: #666;
+
+    .item a{
+      color: #666;
+      font-size: 12px;
+    }
+
+    .p1 a {
+      font-size: 12px;
+      color: #999;
+
+      :hover {
+        text-decoration: underline;
+      }
+    }
+
+    .p1 .line {
+      margin: 0 2px;
+      color: #c2c2c2;
+    }
+
+    .p2 :nth-child(2){
+      margin: 0 4px;
+    }
+
+    .p3 {
+      .logo {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        margin-left:  4px;
+        background: url(../images/footer-police.png) no-repeat 0/cover;
+        vertical-align: -2px;
+      }
+    }
+  }
+
+  .area-right {
+    width: 420px;
+    margin-top: 33px;
+    padding: 0 10px;
+
+    .list {
+      display: flex;
+      justify-content: space-between;
+
+      .item {
+        width: 60px;
+        height: 70px;
+
+        .logo {
+          display: block;
+          width: 50px;
+          height: 45px;
+          margin: 0 auto;
+          background: url(../images/sprite/footer_logo_sprite.png)no-repeat 0/110px 552px;
+
+          &.logo-amped {
+            background-position: -63px -456.5px;
+          }
+
+          &.logo-auth {
+            background-position: -63px -101px;
+          }
+
+          &.logo-musician {
+            background-position: 0 0;
+          }
+
+          &.logo-reward {
+            background-position: -60px -50px;
+          }
+
+          &.logo-cash {
+            background-position-y: -101px;
+          }
+        }
+
+        .desc {
+          display: block;
+          width: 52px;
+          height: 14px;
+          margin: 5px 5px 0;
+          background: url(../images/sprite/footer_desc_sprite.png) no-repeat 0/180px 139px;
+
+          &.amped {
+            width: 72px;
+            margin-left: -5px;
+            background-position: 0 -108px;
+          }
+
+          &.auth {
+            background-position: -1px -91px;
+          }
+
+          &.musician {
+            background-position: 0 0;
+          }
+
+          &.reward {
+            background-position: 0 -54px;
+          }
+
+          &.cash {
+            background-position: -1px -72px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+.footer {
+  height: 172px;
+  box-sizing: border-box;
+  border-top: 1px solid #d3d3d3;
+  background-color: #f2f2f2;
+}
+.footer .area {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+.footer .area .area-left {
+  width: 520px;
+  padding-top: 15px;
+  line-height: 24px;
+  color: #666;
+}
+.footer .area .area-left .item a {
+  color: #666;
+  font-size: 12px;
+}
+.footer .area .area-left .p1 a {
+  font-size: 12px;
+  color: #999;
+}
+.footer .area .area-left .p1 a :hover {
+  text-decoration: underline;
+}
+.footer .area .area-left .p1 .line {
+  margin: 0 2px;
+  color: #c2c2c2;
+}
+.footer .area .area-left .p2 :nth-child(2) {
+  margin: 0 4px;
+}
+.footer .area .area-left .p3 .logo {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-left: 4px;
+  background: url(../images/footer-police.png) no-repeat 0 / cover;
+  vertical-align: -2px;
+}
+.footer .area .area-right {
+  width: 420px;
+  margin-top: 33px;
+  padding: 0 10px;
+}
+.footer .area .area-right .list {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .area .area-right .list .item {
+  width: 60px;
+  height: 70px;
+}
+.footer .area .area-right .list .item .logo {
+  display: block;
+  width: 50px;
+  height: 45px;
+  margin: 0 auto;
+  background: url(../images/sprite/footer_logo_sprite.png) no-repeat 0/110px 552px;
+}
+.footer .area .area-right .list .item .logo.logo-amped {
+  background-position: -63px -456.5px;
+}
+.footer .area .area-right .list .item .logo.logo-auth {
+  background-position: -63px -101px;
+}
+.footer .area .area-right .list .item .logo.logo-musician {
+  background-position: 0 0;
+}
+.footer .area .area-right .list .item .logo.logo-reward {
+  background-position: -60px -50px;
+}
+.footer .area .area-right .list .item .logo.logo-cash {
+  background-position-y: -101px;
+}
+.footer .area .area-right .list .item .desc {
+  display: block;
+  width: 52px;
+  height: 14px;
+  margin: 5px 5px 0;
+  background: url(../images/sprite/footer_desc_sprite.png) no-repeat 0/180px 139px;
+}
+.footer .area .area-right .list .item .desc.amped {
+  width: 72px;
+  margin-left: -5px;
+  background-position: 0 -108px;
+}
+.footer .area .area-right .list .item .desc.auth {
+  background-position: -1px -91px;
+}
+.footer .area .area-right .list .item .desc.musician {
+  background-position: 0 0;
+}
+.footer .area .area-right .list .item .desc.reward {
+  background-position: 0 -54px;
+}
+.footer .area .area-right .list .item .desc.cash {
+  background-position: -1px -72px;
+}

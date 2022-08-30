@@ -1,0 +1,152 @@
+.header>.top {
+  height: 70px;
+  background-color: #242424;
+  box-sizing: border-box;
+  border-bottom: 1px solid #000;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  height: 69px;
+  line-height: 69px;
+
+  .bar-left {
+    display: flex;
+
+    .logo {
+
+      a {
+        display: block;
+        width: 157px;
+        padding-right: 20px;
+        text-indent: -9999px;
+      }
+    }
+
+    .list {
+      display: flex;
+
+      .item {
+        position: relative;
+        display: block;
+        padding: 0 20px;
+        font-size: 14px;
+        color: #ccc;
+
+        &:hover,
+        &.active {
+          color: #fff;
+          background-color: #000;
+        }
+
+        &.active {
+          &::after {
+            content: "";
+            position: absolute;
+            width: 12px;
+            height: 7px;
+            bottom: -2px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            background: url(../images/sprite/topbar_sprite.png) -226px 0;
+          }
+        }
+
+        .icon-hot {
+          position: absolute;
+          top: 14px;
+          right: -18px;
+        }
+      }
+    }
+  }
+
+  .bar-right {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+
+    .login {
+      a {
+        color: #787878;
+
+        &:hover {
+          color: #787878;
+          text-decoration: underline;
+        }
+      }
+
+      &:hover a {
+        color: #ccc
+      }
+    }
+
+    .anthor a {
+      display: inline-block;
+      width: 90px;
+      height: 32px;
+      margin: 0 20px;
+      line-height: 32px;
+      color: #ccc;
+      text-align: center;
+      box-sizing: border-box;
+      border: 1px solid #4f4f4f;
+      border-radius: 20px;
+
+      &:hover {
+        color: #fff;
+        border-color: #fff;
+      }
+    }
+
+    .search {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 158px;
+      height: 32px;
+      box-sizing: border-box;
+      padding-right: 10px;
+      border-radius: 30px;
+      background: #fff url(../images/sprite/topbar_sprite.png) 0 -99px;
+
+      input {
+        font-size: 12px;
+        width: 118px;
+      }
+    }
+  }
+}
+
+.nav {
+  height: 35px;
+  line-height: 35px;
+  background-color: #c20c0c;
+  box-sizing: border-box;
+  border: 1px solid #a40011;
+}
+
+.navbar {
+  box-sizing: border-box;
+  padding-left: 180px;
+  .list{
+    display: flex;
+    .item{
+      display: inline-block;
+      span{
+        display: inline-block;
+        padding: 0 13px;
+        margin: 7px 17px;
+        height: 20px;
+        line-height:21px;
+        color: #fff;
+        border-radius: 20px;
+      }
+      &:hover span,&.active span{
+        background-color: #9b0909;
+      }
+    }
+  }
+}
